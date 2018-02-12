@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChooseQuestionItemView">
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="dimension" />
+        <!-- 正常的背景图-->
+        <attr name="textNormalBackGround" format="reference" />
+        <!--错误的背景图-->
+        <attr name="textErrorBackGround" format="reference" />/
+        <!--选中的背景图-->
+        <attr name="textSelectedBackGround" format="reference" />
+        <attr name="textWidth" format="dimension" />
+        <attr name="textHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ChooseQuestionView">
+        <attr name="cqvTextSize" format="dimension" />
+        <!-- 正常的背景图-->
+        <attr name="cqvTextNormalBackGround" format="reference" />
+        <!--错误的背景图-->
+        <attr name="cqvTextErrorBackGround" format="reference" />/
+        <!--选中的背景图-->
+        <attr name="cqvTextSelectedBackGround" format="reference" />
+        <!--文本字体选中的颜色 -->
+        <attr name="cqvTextSelectedColor" format="reference|color" />
+        <!--文本字体错误的颜色 -->
+        <attr name="cqvTextErrorColor" format="reference|color" />
+        <!--文本字体正常的颜色 -->
+        <attr name="cqvTextNormalColor" format="reference|color" />
+
+        <!-- 选项数-->
+        <attr name="cqvCount" format="integer" />
+        <!--类型(单选，多选) -->
+        <attr name="cqvChooseType">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+        </attr>
+        <attr name="cqvTextWidth" format="dimension" />
+        <attr name="cqvTextHeight" format="dimension" />
+        <attr name="cqvTextLeftMargin" format="dimension" />
+        <attr name="cqvTextRightMargin" format="dimension" />
+        <!-- 一行显示几个Item-->
+        <attr name="cqvLineItemCount" format="integer" />
+        <!-- 行之间的Maring-->
+        <attr name="cqvLineBetweenMargin" format="dimension" />
+    </declare-styleable>
+    <!-- 缩略图的Item宽高-->
+    <declare-styleable name="ThumbnailItemView">
+        <attr name="tivHeight" format="dimension" />
+        <attr name="tivWidth" format="dimension" />
+        <attr name="tivDeleteBackGround" format="reference" />
+        <attr name="tivThumbMarginLeft" format="dimension" />
+        <attr name="tivThumbMarginTop" format="dimension" />
+        <attr name="tivThumbMarginRight" format="dimension" />
+        <attr name="tivThumbMarginBottom" format="dimension" />
+        <attr name="tivThumbBackGround" format="reference" />
+        <!--<attr name="tivDeleteGravity">-->
+        <!--<enum name="right" value="0" />-->
+        <!--<enum name="left" value="1" />-->
+        <!--<enum name="bottom" value="1" />-->
+        <!--</attr>-->
+    </declare-styleable>
+    <!--缩略图View -->
+    <declare-styleable name="ShowThumbnailView">
+        <attr name="stvItemLayout" format="reference" />
+        <attr name="stvPhotoLayout" format="reference" />
+        <attr name="stvLineItemCount" format="integer" />
+        <!-- 限制图片显示数目-->
+        <attr name="stvLimitCount" format="integer" />
+        <!--圆角角度-->
+        <attr name="stvRoundRadius" format="dimension" />
+    </declare-styleable>
+    <!-- 反思Item-->
+    <declare-styleable name="RethinkItemView">
+        <!--正常的字体颜色 -->
+        <attr name="rivTextNormalColor" format="reference|color" />
+        <!--选中的字体颜色 -->
+        <attr name="rivTextSelectedColor" format="reference|color" />
+        <attr name="rivTextSize" format="dimension">textSize</attr>
+        <!-- 正常的背景图-->
+        <attr name="rivTextNormalBackGround" format="reference" />
+        <!--选中的背景图-->
+        <attr name="rivTextSelectedBackGround" format="reference" />
+        <attr name="rivTextWidth" format="dimension" />
+        <attr name="rivTextHeight" format="dimension" />
+        <attr name="rivTextString" format="string" />
+    </declare-styleable>
+    <declare-styleable name="RethinkView">
+        <attr name="rvTextSize" format="dimension" />
+        <!-- 正常的背景图-->
+        <attr name="rvTextNormalBackGround" format="reference" />
+        <!--选中的背景图-->
+        <attr name="rvTextSelectedBackGround" format="reference" />
+        <!--文本字体选中的颜色 -->
+        <attr name="rvTextSelectedColor" format="reference|color" />
+        <!--文本字体正常的颜色 -->
+        <attr name="rvTextNormalColor" format="reference|color" />
+        <attr name="rvTextWidth" format="dimension" />
+        <attr name="rvTextHeight" format="dimension" />
+        <attr name="rvTextLeftMargin" format="dimension" />
+        <attr name="rvTextRightMargin" format="dimension" />
+        <!-- 一行显示几个Item-->
+        <attr name="rvLineItemCount" format="integer" />
+        <!-- 行之间的Maring-->
+        <attr name="rvLineBetweenMargin" format="dimension" />
+    </declare-styleable>
+
+    <!-- 连线题属性 -->
+    <declare-styleable name="DrawLineViewWrapper">
+        <!--布局属性，是水平的还是垂直 -->
+        <attr name="dlvwOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <!-- 线的正常连接的颜色-->
+        <attr name="dlvwLineNormalColor" format="color|reference" />
+        <!-- 线的错误连接的颜色-->
+        <attr name="dlvwLineErrorColor" format="color|reference" />
+        <!-- 文字的大小-->
+        <attr name="dlvwItemTextSize" format="dimension" />
+        <!-- 宽度-->
+        <attr name="dlvwItemTextWidth" format="dimension" />
+        <!-- 高度-->
+        <attr name="dlvwItemTextHeight" format="dimension" />
+        <!-- 选中的背景状态-->
+        <attr name="dlvwItemTextSelectedBackground" format="reference" />
+        <!-- 正常的背景状态-->
+        <attr name="dlvwItemTextNormalBackground" format="reference" />
+        <!-- 错误的背景状态-->
+        <attr name="dlvwItemTextErrorBackground" format="reference" />
+        <!-- 文本正常颜色-->
+        <attr name="dlvwItemTextNormalColor" format="color|reference" />
+        <!-- 文本选中的颜色-->
+        <attr name="dlvwItemTextSelectedColor" format="color|reference" />
+        <!-- 文本错误的颜色-->
+        <attr name="dlvwItemTextErrorColor" format="color|reference" />
+        <!-- 选项数-->
+        <attr name="dlvwItemCount" format="integer" />
+        <!-- Item之间的距离-->
+        <attr name="dlvwItemMargin" format="dimension" />
+        <!--行之间的距离 -->
+        <attr name="dlvwLineBetweenMargin" format="dimension" />
+    </declare-styleable>
+</resources>

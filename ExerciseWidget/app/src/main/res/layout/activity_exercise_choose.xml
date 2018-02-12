@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="考试" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选题" />
+
+            <com.iblogstreet.exerciselib.ChooseQuestionView
+                android:id="@+id/cqvSingle"
+                android:layout_width="800dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                app:cqvChooseType="single"
+                app:cqvCount="4"
+                app:cqvTextErrorBackGround="@drawable/choose_background_error"
+                app:cqvTextErrorColor="#fff"
+                app:cqvTextHeight="48px"
+                app:cqvTextLeftMargin="20dp"
+                app:cqvTextNormalBackGround="@drawable/choose_background_normal"
+                app:cqvTextNormalColor="#999999"
+                app:cqvTextSelectedBackGround="@drawable/choose_background_pressed"
+                app:cqvTextSelectedColor="#fff"
+                app:cqvTextSize="16sp"
+                app:cqvTextWidth="88px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多选题" />
+
+            <com.iblogstreet.exerciselib.ChooseQuestionView
+                android:id="@+id/cqvMulti"
+                android:layout_width="800dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                app:cqvChooseType="multi"
+                app:cqvCount="7"
+                app:cqvLineBetweenMargin="20dp"
+                app:cqvLineItemCount="3"
+                app:cqvTextErrorBackGround="@drawable/choose_background_error"
+                app:cqvTextErrorColor="#fff"
+                app:cqvTextHeight="48px"
+                app:cqvTextLeftMargin="20dp"
+                app:cqvTextNormalBackGround="@drawable/choose_background_normal"
+                app:cqvTextNormalColor="#999999"
+                app:cqvTextSelectedBackGround="@drawable/choose_background_pressed"
+                app:cqvTextSelectedColor="#ffffff"
+                app:cqvTextSize="16sp"
+                app:cqvTextWidth="88px"
+                app:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对错题" />
+
+            <com.iblogstreet.exerciselib.RightOrErrorQuestionView
+                android:id="@+id/rightView"
+                android:layout_width="800dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                app:cqvChooseType="single"
+                app:cqvCount="2"
+                app:cqvTextErrorBackGround="@drawable/choose_background_error"
+                app:cqvTextErrorColor="#fff"
+                app:cqvTextHeight="48px"
+                app:cqvTextLeftMargin="20dp"
+                app:cqvTextNormalBackGround="@drawable/choose_background_normal"
+                app:cqvTextNormalColor="#999999"
+                app:cqvTextSelectedBackGround="@drawable/choose_background_pressed"
+                app:cqvTextSelectedColor="#fff"
+                app:cqvTextSize="16sp"
+                app:cqvTextWidth="88px"
+                app:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主观题" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.iblogstreet.exerciselib.ShowThumbnailView
+                    android:id="@+id/stv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:stvItemLayout="@layout/item_thumb"
+                    app:stvLimitCount="4"
+                    app:stvLineItemCount="5"
+                    app:stvPhotoLayout="@layout/item_take_photo" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反思组件" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showRethink"
+                    android:src="@mipmap/error_rethink"
+                    android:text="反思" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="showRethink"
+                    android:src="@mipmap/error_rethink"
+                    android:text="反思" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="180dp"
+                    android:onClick="showRethink"
+                    android:src="@mipmap/error_rethink"
+                    android:text="反思" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对应题" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="20dp">
+
+                <com.iblogstreet.exerciselib.DrawLineViewWrapper
+                    android:id="@+id/drawLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:dlvwItemCount="6"
+                    app:dlvwItemMargin="50dp"
+                    app:dlvwItemTextErrorBackground="@drawable/correspond_background_error"
+                    app:dlvwItemTextErrorColor="#fff"
+                    app:dlvwItemTextNormalBackground="@drawable/correspond_background_normal"
+                    app:dlvwItemTextNormalColor="#999999"
+                    app:dlvwItemTextSelectedBackground="@drawable/correspond_background_press"
+                    app:dlvwItemTextSelectedColor="#fff"
+                    app:dlvwItemTextSize="16sp"
+                    app:dlvwLineBetweenMargin="60dp"
+                    app:dlvwLineErrorColor="#ff5542"
+                    app:dlvwLineNormalColor="#128ee9"
+                    app:dlvwOrientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.iblogstreet.exerciselib.DrawLineViewWrapper
+                    android:id="@+id/drawVerticalLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="100dp"
+                    app:dlvwItemCount="4"
+                    app:dlvwItemMargin="50dp"
+                    app:dlvwItemTextErrorBackground="@drawable/correspond_background_error"
+                    app:dlvwItemTextErrorColor="#fff"
+                    app:dlvwItemTextNormalBackground="@drawable/correspond_background_normal"
+                    app:dlvwItemTextNormalColor="#999999"
+                    app:dlvwItemTextSelectedBackground="@drawable/correspond_background_press"
+                    app:dlvwItemTextSelectedColor="#fff"
+                    app:dlvwItemTextSize="16sp"
+                    app:dlvwLineBetweenMargin="60dp"
+                    app:dlvwLineErrorColor="#ff5542"
+                    app:dlvwLineNormalColor="#128ee9"
+                    app:dlvwOrientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="showAnswer"
+            android:text="显示答题结果" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="setAnswer"
+            android:text="设置答题" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="setItemCount"
+            android:text="设置Item数目" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="showLine"
+            android:text="改变行显示数目" />
+    </LinearLayout>
+</ScrollView>

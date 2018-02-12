@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+
+    <com.iblogstreet.exerciselib.RethinkView
+        android:id="@+id/rethinkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_rethink_bg"
+        android:padding="20dp"
+        app:rvLineBetweenMargin="10dp"
+        app:rvLineItemCount="3"
+        app:rvTextHeight="30dp"
+        app:rvTextNormalBackGround="@drawable/choose_background_normal"
+        app:rvTextNormalColor="#999999"
+        app:rvTextRightMargin="20dp"
+        app:rvTextSelectedBackGround="@drawable/choose_background_pressed"
+        app:rvTextSelectedColor="#fff"
+        app:rvTextSize="12sp"
+        app:rvTextWidth="150dp" />
+
+    <ImageView
+        android:id="@+id/upArrow"
+        android:layout_above="@+id/rethinkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/rethink_arrow" />
+    <ImageView
+        android:id="@+id/downArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rethinkView"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/down_arrow_drawable" />
+</RelativeLayout>

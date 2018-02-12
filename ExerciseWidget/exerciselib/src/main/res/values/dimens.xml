@@ -1,0 +1,40 @@
+<resources>
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="target_radius">24dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+
+    <dimen name="content_padding">16dp</dimen>
+    <dimen name="content_padding_half">8dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_96">96dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_100">100dp</dimen>
+    <dimen name="size_text_32">32sp</dimen>
+
+    <dimen name="size_view_140">140dp</dimen>
+    <dimen name="size_view_110">110dp</dimen>
+    <dimen name="size_view_100">100dp</dimen>
+    <dimen name="size_view_90">90dp</dimen>
+    <dimen name="size_view_52">52dp</dimen>
+    <dimen name="size_view_45">45dp</dimen>
+    <dimen name="size_view_16">16dp</dimen>
+    <dimen name="size_view_18">18dp</dimen>
+    <dimen name="size_text_14">14sp</dimen>
+    <dimen name="size_text_22">22sp</dimen>
+    <dimen name="size_text_26">26sp</dimen>
+    <dimen name="space_26">26dp</dimen>
+
+</resources>

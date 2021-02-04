@@ -3,7 +3,6 @@ package com.iblogstreet.exercisewidget.base;
 
 import android.app.Activity;
 import android.app.FragmentManager;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -78,7 +77,7 @@ public abstract class BaseActivity extends Activity {
     private void initSet() {
         //去掉标题栏
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);//设置屏幕方向为水平
+//        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);//设置屏幕方向为水平
 //
 //        //全屏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

@@ -23,7 +23,7 @@
         app:rvTextRightMargin="20dp"
         app:rvTextSelectedBackGround="@drawable/choose_background_pressed"
         app:rvTextSelectedColor="#fff"
-        app:rvTextSize="12sp"
+        app:rvTextSize="5dp"
         app:rvTextWidth="150dp" />
 
     <ImageView

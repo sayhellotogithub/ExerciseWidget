@@ -46,7 +46,7 @@ public class ChooseActivity extends BaseActivity implements ChooseQuestionView.O
             mChooseQuestionSingleView.setChooseCount(4);
             mChooseQuestionSingleView.setmAnswerList(new ArrayList<String>() {
                 {
-                    add("AB");
+                    add("A");
                 }
             });
             mChooseQuestionMultiView.setmAnswerList(new ArrayList<String>() {
@@ -94,7 +94,6 @@ public class ChooseActivity extends BaseActivity implements ChooseQuestionView.O
         mChooseQuestionMultiView.setOnChooseQuestionListener(this);
         mChooseQuestionSingleView.setOnChooseQuestionListener(this);
         mRightView.setOnChooseQuestionListener(this);
-        mShowThumbnailView.setUrlPrefix("10.0.0.9");
         mShowThumbnailView.setOnShowThumbnailListener(new ShowThumbnailView.OnShowThumbnailListener() {
             @Override
             public void onAnswerList(List<String> answerList, ShowThumbnailView showThumbnailView) {
@@ -150,13 +149,30 @@ public class ChooseActivity extends BaseActivity implements ChooseQuestionView.O
         mShowThumbnailView.showAnswerResult();
         mDrawLineViewWrapper.showAnswer("1B2A3C4E5D6F");
         mDrawVerticalLine.showAnswer("1C2A3D4B");
+        mRightView.showAnswer(new ArrayList<String>() {
+            {
+                add("A");
+            }
+        });
     }
 
     public void setAnswer(View view) {
-        mDrawLineViewWrapper.setAnswer("1A2B");
-        mDrawVerticalLine.setAnswer("2A");
-        mChooseQuestionSingleView.setmAnswerList(new ArrayList<String>() {
-
+        mDrawLineViewWrapper.setAnswer("1B2A3C4E5D6F");
+        mDrawVerticalLine.setAnswer("1C2A3D4B");
+        mChooseQuestionMultiView.setmAnswerList(new ArrayList<String>() {
+            {
+                add("AC");
+            }
+        });
+       mChooseQuestionSingleView.setmAnswerList(new ArrayList<String>() {
+            {
+                add("C");
+            }
+        });
+        mRightView.setmAnswerList(new ArrayList<String>() {
+            {
+                add("A");
+            }
         });
     }
 
